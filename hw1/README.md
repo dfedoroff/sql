@@ -70,7 +70,7 @@ WHERE  product_count > 2;
 Выведите `SELECT`-запросом весь ассортимент товаров марки `Samsung`:
 
 ```SQL
-SELECT *
+SELECT product_name, manufacturer
 FROM   smartphones
 WHERE  manufacturer = 'Samsung';
 ```
@@ -84,7 +84,7 @@ WHERE  manufacturer = 'Samsung';
 *4.1. Товары, в которых есть упоминание `Iphone`:
 
 ```SQL
-SELECT *
+SELECT product_name
 FROM   smartphones
 WHERE  product_name LIKE '%Iphone%';
 ```
@@ -92,7 +92,7 @@ WHERE  product_name LIKE '%Iphone%';
 *4.2. Товары, в которых есть упоминание `Samsung`:
 
 ```SQL
-SELECT *
+SELECT product_name
 FROM   smartphones
 WHERE  product_name LIKE '%Samsung%';
 ```
@@ -100,7 +100,7 @@ WHERE  product_name LIKE '%Samsung%';
 *4.3. Товары, в названии которых есть `цифры`:
 
 ```SQL
-SELECT *
+SELECT product_name
 FROM   smartphones
 WHERE  product_name RLIKE '[0-9]';
 ```
@@ -108,12 +108,7 @@ WHERE  product_name RLIKE '[0-9]';
 *4.4. Товары, в названии которых есть цифра `8`:
 
 ```SQL
-SELECT *
+SELECT product_name
 FROM   smartphones
 WHERE  product_name LIKE '%8%';
 ```
-
-
-
-
-
