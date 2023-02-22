@@ -10,6 +10,7 @@
 
 ```SQL
 CREATE DATABASE sql_hw1;
+
 USE sql_hw1;
 ```
 
@@ -59,8 +60,8 @@ SELECT * FROM smartphones;
 
 ```SQL
 SELECT product_name, manufacturer, price
-FROM   smartphones
-WHERE  product_count > 2;
+  FROM smartphones
+ WHERE product_count > 2;
 ```
 
 ## Задача 3
@@ -71,8 +72,8 @@ WHERE  product_count > 2;
 
 ```SQL
 SELECT product_name, manufacturer
-FROM   smartphones
-WHERE  manufacturer = 'Samsung';
+  FROM smartphones
+ WHERE manufacturer = 'Samsung';
 ```
 
 ## Задача *4
@@ -85,30 +86,30 @@ WHERE  manufacturer = 'Samsung';
 
 ```SQL
 SELECT product_name
-FROM   smartphones
-WHERE  product_name LIKE '%Iphone%';
+  FROM smartphones
+ WHERE product_name LIKE '%Iphone%';
 ```
 
 *4.2. Товары, в которых есть упоминание `Samsung`:
 
 ```SQL
 SELECT product_name
-FROM   smartphones
-WHERE  product_name LIKE '%Samsung%';
+  FROM smartphones
+ WHERE product_name LIKE '%Samsung%';
 ```
 
 *4.3. Товары, в названии которых есть `цифры`:
 
 ```SQL
 SELECT product_name
-FROM   smartphones
-WHERE  product_name RLIKE '[0-9]';
+  FROM smartphones
+ WHERE product_name RLIKE '[0-9]';
 ```
 
 *4.4. Товары, в названии которых есть цифра `8`:
 
 ```SQL
 SELECT product_name
-FROM   smartphones
-WHERE  product_name LIKE '%8%';
+  FROM smartphones
+ WHERE product_name LIKE '%8%';
 ```
